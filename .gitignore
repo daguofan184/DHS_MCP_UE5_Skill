@@ -1,0 +1,17 @@
+# Windows
+Thumbs.db
+desktop.ini
+*.lnk
+
+# macOS / editors
+.DS_Store
+.vscode/
+.idea/
+
+# PowerShell
+*.log
+
+# uv / python (wrappers may add these later)
+__pycache__/
+*.pyc
+.venv/

@@ -1,7 +1,9 @@
-# dsh-unreal-mcp-connect
+# DHS_MCP_UE5_Skill
 
 把 **Unreal Engine 5.8+** 引擎自带的实验性 MCP 服务端（`ModelContextProtocol` 插件，FriendlyName「Unreal MCP」）
 接通到 DSH / 任意 MCP 客户端的可复用流程 —— 含体检脚本、协议探针，和一套已验证的排障路径。
+
+仓库名 `DHS_MCP_UE5_Skill`，里面的技能目录名是 `unreal-mcp-connect`（可独立安装，也可以继续往 `skills/` 下加别的技能）。
 
 > 已实测：UE 5.8.4（`++UE5+Release-5.8-CL-58902052`）+ DSH web profile，
 > `initialize` / `notifications/initialized` / `tools/list` / `tools/call` 全链路通过。
@@ -20,6 +22,11 @@ UE 5.8 起引擎自带一个标准 MCP 服务端（streamable HTTP，默认 `htt
 | `skills/unreal-mcp-connect/scripts/ue-mcp-probe.ps1` | 协议探针：三步握手 + 可选 `tools/call`，退出码 0/1 便于脚本化 |
 
 ## 安装
+
+```powershell
+git clone https://github.com/daguofan184/DHS_MCP_UE5_Skill.git
+cd DHS_MCP_UE5_Skill
+```
 
 把 skill 目录放进 DSH 的用户技能根目录：
 
